@@ -9,3 +9,22 @@ This platform allows pharmaceutical scientists and students to:
 * **Visualize and analyze results** with interactive plots and data tables.
 
 ---
+
+### How to Install and Run
+
+This project requires both R and Python to be installed on your system.
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/haythem03/Bioequivalence-Analysis.git
+cd Bioequivalence-Analysis
+```
+
+#### 2. Set Up the R Environment
+
+The R dependencies are listed in `Rscript/Dependencies.md`. To install them, simply run the installation script from your R console:
+
+```r
+source("Rscript/install_packages.R")
+```
