@@ -1,0 +1,19 @@
+# Python virtual environments
+myenv/
+venv/
+
+# Environment files
+.env
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# R specific
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS files
+.DS_Store
+Thumbs.db
