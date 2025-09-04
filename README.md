@@ -59,3 +59,17 @@ Once both environments are set up, you can launch the application from your R co
 shiny::runApp()
 ```
 The application will open in a new window or your default web browser.
+
+## Getting Started
+
+Follow these steps to get the application up and running on your local machine.
+
+### Prerequisites
+
+To run this application, you need to have both **R** and **Python** installed on your system.
+
+* **R**: [Download from CRAN](https://cran.r-project.org/)
+* **Python**: [Download from python.org](https://www.python.org/downloads/)
+* **RStudio** (https://posit.co/download/rstudio-desktop/) is an necessary IDE.
+
+
