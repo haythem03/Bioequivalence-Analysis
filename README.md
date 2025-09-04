@@ -51,3 +51,11 @@ Rscript install_packages.R
 
 Alternatively, you can open the install_packages.R file in RStudio and run the entire script.
 
+#### 5. Run the Application
+Once both environments are set up, you can launch the application from your R console. Make sure you are in the project's root directory (integrated-drug-development/).
+
+```R
+
+shiny::runApp()
+```
+The application will open in a new window or your default web browser.
