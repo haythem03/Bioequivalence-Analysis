@@ -59,7 +59,7 @@ ui <- dashboardPage(
   dashboardHeader(
     title = tags$span(
       icon("atom"),
-      "Integrated Drug Development Platform",
+      "Kinexis",
       style = "font-weight: bold; color: #ddd6fe; text-shadow: 0 0 10px #9c88ff;"
     ),
     titleWidth = 400
