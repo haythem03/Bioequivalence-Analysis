@@ -1,75 +1,117 @@
-# Bioequivalence-Analysis
-An R Shiny application for end-to-end drug development simulations, integrating molecular property prediction with population pharmacokinetic (popPK) and bioequivalence (BE) modeling.
+<div align="center">
 
-This platform allows pharmaceutical scientists and students to:
-* **Analyze molecular structures** from a simple SMILES string.
-* **Predict PK parameters** based on a molecule's physicochemical properties.
-* **Simulate different formulations** (e.g., immediate-release, extended-release, fed/fasted state).
-* **Run a virtual bioequivalence (BE) study** to compare formulations.
-* **Visualize and analyze results** with interactive plots and data tables.
+# 💊 Bioequivalence Analysis & Simulation
+
+**An integrated R Shiny platform for end-to-end drug development simulations.**
+
+[![R](https://img.shields.io/badge/R-4.0%2B-blue?style=for-the-badge&logo=r&logoColor=white)](https://cran.r-project.org/)
+[![Shiny](https://img.shields.io/badge/Framework-Shiny-blueviolet?style=for-the-badge&logo=rstudio&logoColor=white)](https://shiny.rstudio.com/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-yellow?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+[Overview](#-overview) •
+[Features](#-key-features) •
+[Installation](#-installation) •
+[Usage](#-usage) •
+[Contributing](#-contributing)
+
+</div>
 
 ---
 
-### How to Install and Run
+## 🧭 Overview
 
-This project requires both R and Python to be installed on your system.
+**Bioequivalence-Analysis** is a powerful R Shiny application designed to bridge the gap between molecular chemistry and clinical pharmacology.
 
-#### 1. Clone the Repository
+It serves as a comprehensive simulation sandbox for pharmaceutical scientists and researchers, enabling the integration of **molecular property prediction**, **population pharmacokinetics (popPK)**, and **virtual bioequivalence (BE) trials**. By simulating the journey of a drug from structure to subject, this tool accelerates decision-making in formulation development.
 
-```bash
-git clone https://github.com/haythem03/Bioequivalence-Analysis.git
-cd Bioequivalence-Analysis
-```
+### 🎯 Key Goals
+* **Predict** how chemical structure influences biological behavior.
+* **Simulate** clinical scenarios (Fed vs. Fasted, IR vs. ER).
+* **Evaluate** bioequivalence between test and reference formulations in silico.
 
-#### 2. Set Up the R Environment
+---
 
-The R dependencies are listed in `Rscript/Dependencies.md`. To install them, simply run the installation script from your R console:
+## 🚀 Key Features
 
-```r
-source("Rscript/install_packages.R")
-```
+| Feature | Description |
+| :--- | :--- |
+| **🧪 Molecular Analysis** | Instantly analyze molecular structures and physicochemical properties from a simple **SMILES** string. |
+| **📈 PK Prediction** | Predict key Pharmacokinetic (PK) parameters based on calculated molecular descriptors. |
+| **⚙️ Formulation Sim** | Model various scenarios, including **Immediate-Release (IR)** vs. **Extended-Release (ER)** and food effects. |
+| **👥 Virtual Trials** | Run full-scale **Bioequivalence (BE) studies** on virtual populations to compare Test vs. Reference drugs. |
+| **📊 Interactive Viz** | Visualize concentration-time profiles, statistical distributions, and BE metrics with dynamic plots. |
 
-#### 3. Set Up the Python Environment
-The R application uses `reticulate` to call Python functions. You need to install the required Python libraries.
+---
 
-From your command line or terminal, use pip to install the necessary packages:
+## 🛠️ Installation
 
-```bash
-pip install rdkit-pypi pandas numpy
-```
-#### 4. Install R Dependencies
-All R dependencies are listed in Rscript/R_DEPENDENCIES.md. To install them, simply run the provided R script:
-
-```Bash
-
-# Navigate to the Rscript folder in your terminal
-cd Rscript
-
-#Run the script from the command line
-Rscript install_packages.R
-```
-
-Alternatively, you can open the install_packages.R file in RStudio and run the entire script.
-
-#### 5. Run the Application
-Once both environments are set up, you can launch the application from your R console. Make sure you are in the project's root directory (integrated-drug-development/).
-
-```R
-
-shiny::runApp()
-```
-The application will open in a new window or your default web browser.
-
-## Getting Started
-
-Follow these steps to get the application up and running on your local machine.
+This project operates as a hybrid application, leveraging **R** for the interface/statistics and **Python** for cheminformatics.
 
 ### Prerequisites
+* **R:** [Download from CRAN](https://cran.r-project.org/)
+* **Python:** [Download from python.org](https://www.python.org/downloads/)
+* **RStudio:** [Download IDE](https://posit.co/download/rstudio-desktop/) (Highly Recommended)
 
-To run this application, you need to have both **R** and **Python** installed on your system.
+### Step-by-Step Guide
 
-* **R**: [Download from CRAN](https://cran.r-project.org/)
-* **Python**: [Download from python.org](https://www.python.org/downloads/)
-* **RStudio** (https://posit.co/download/rstudio-desktop/) is an necessary IDE.
+#### 1. Clone the Repository
+```bash
+git clone [https://github.com/haythem03/Bioequivalence-Analysis.git](https://github.com/haythem03/Bioequivalence-Analysis.git)
+cd Bioequivalence-Analysis
+```
+#### 2\. Set Up the Python Environment
 
+The app uses `reticulate` to interface with Python libraries for molecular handling. Install the required packages via pip:
 
+Bash
+
+  
+
+pip install rdkit-pypi pandas numpy
+
+#### 3\. Set Up the R Environment
+
+We have streamlined the R dependency installation. Navigate to the script folder and run the installer:
+
+Bash
+
+  
+
+\# Navigate to the Rscript folder
+cd Rscript
+
+# Run the installation script
+Rscript install\_packages.R
+
+> _Alternatively, open_ `_Rscript/install_packages.R_` _in RStudio and run the script manually._
+
+## 💻 Usage
+
+Once your environment is configured, launching the simulation dashboard is simple.
+
+1.  Open RStudio or your R console.
+2.  Ensure you are in the project root directory (`Bioequivalence-Analysis/`).
+3.  Run the following command:
+
+R
+
+  
+
+shiny::runApp()
+
+The application will automatically launch in your default web browser.
+
+## 🤝 Contributing
+
+Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  **Fork the Project**
+2.  **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3.  **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
+4.  **Push to the Branch** (`git push origin feature/AmazingFeature`)
+5.  **Open a Pull Request**
+
+## 📄 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
